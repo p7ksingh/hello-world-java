@@ -8,8 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world")
-	public String helloWorld() {
-		System.out.println("Hello World!");
+	public String helloWorld() throws InterruptedException {
+		// for (int i = 1; i <= 100; i++) {
+		// Thread.sleep(1000);
+		// System.out.println("Hello World!" + i);
+		// }
 		return "Hello World";
 	}
 
